@@ -1,6 +1,9 @@
 #include<iostream>
 using namespace std;
 
+// Things in this files are messed up, Do it again. This concept is not clear.
+
+
 // XOR bitwise operator 
 // Gives 1 when exactly one value is 1 otherwise it gives 0 - ex (1,1=0) (1,0=1), (0,1=1), (0,0=0)
 

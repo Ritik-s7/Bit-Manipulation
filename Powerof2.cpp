@@ -4,9 +4,12 @@ using namespace std;
 bool Powerof2(int n)
 {
     bool flag = true;
-    int i=0;
-    // n = 1000..... while n-1 = 0111.....
-    return (n && !(n & (n-1)));
+    if(n==0)
+    {
+        return false;
+    }
+    // n = 1000..... while n-1 = 0111..... 
+    return ((n&(n-1))==0);
 
     
 }
