@@ -33,11 +33,27 @@ int setBit(int n, int pos)
 
 void TwoUniqueNum(int arr[], int n)
 {
-    int xorSum = 0;
+    int xorSum = 0, res1 = 0, res2=0;
     for(int i=0;i<n;i++)
     {
         xorSum = xorSum^arr[i];
     }
+
+    int setBit = xorSum & ~(xorSum-1);
+
+    for(int i=0;i<n;i++)
+    {
+        if((arr[i]&setBit) != 0)
+        {
+            res1 = res1^arr[i];
+        }
+        else
+        {
+            res2 = res2^arr[i];
+        }
+    }
+   cout << res1 <<" "<< res2<<endl;
+    /*
     int tempxor = xorSum;
     int setbit = 0;
     int pos = 0;
@@ -59,7 +75,7 @@ void TwoUniqueNum(int arr[], int n)
 
     cout<<newxor<<endl;
     cout<<(tempxor^newxor)<<endl;
-    
+    */
     
 }
 
@@ -93,6 +109,5 @@ int main()
     int arr3[] = {1,2,3,4,1,2,3,1,2,3};
     cout << uniqueNum(arr,7)<<endl;
     TwoUniqueNum(arr2,8); 
-    cout <<(1^2)<<endl;
     cout << ThreeUniqueNum(arr3,10)<<endl;
 }
