@@ -1,0 +1,1 @@
+{"name":"Local: maximumANDvalue","url":"c:\\Users\\LENOVO\\Desktop\\Bit Manipulation\\maximumANDvalue.cpp","tests":[{"id":1622698511250,"input":"5\n2 4 8 12 16","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\LENOVO\\Desktop\\Bit Manipulation\\maximumANDvalue.cpp","group":"local","local":true}
